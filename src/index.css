@@ -1,0 +1,24 @@
+/* App.css */
+
+.full-map {
+  position: relative;
+  height: 100vh; /* Высота карты на 100% высоты окна */
+}
+
+.map-component {
+  position: fixed; /* Фиксируем компонент формы */
+  bottom: 0; /* Привязываем к нижней части */
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Убедитесь, что форма поверх карты */
+}
+
+.planting-form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
