@@ -19,6 +19,8 @@ const MapComponent: React.FC = () => {
   const [action, setAction] = useState<string>(""); // "planting" или "cutting"
   const [currentLayer, setCurrentLayer] = useState<L.Layer | null>(null);
 
+  console.log(plantingRecords);
+
   useEffect(() => {
     const drawnItems = new L.FeatureGroup();
     map.addLayer(drawnItems);
